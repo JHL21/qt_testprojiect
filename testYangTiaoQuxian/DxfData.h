@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-
+//
 //#define pi 3.1415926
 extern double Angle[36001];
 extern double distance[36001];
