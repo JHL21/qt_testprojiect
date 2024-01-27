@@ -6,34 +6,34 @@
 extern double Angle[36001];
 extern double distance[36001];
 
-struct DispersedPoint//ÀëÉ¢µÄµã
+struct DispersedPoint//??????
 {
-	double Pointx;//x×ø±ê
-	double Pointy;//y×ø±ê
+	double Pointx;//x????
+	double Pointy;//y????
 };
 
-struct LineType//Ö±Ïß
+struct LineType//Ö±ï¿½ï¿½
 {
-	double x_Start;//Æðµãx×ø±ê
-	double y_Start;//Æðµãy×ø±ê
-	double x_End;//ÖÕµãx×ø±ê
-	double y_End;//ÖÕµãy×ø±ê
+	double x_Start;//ï¿½ï¿½ï¿½xï¿½ï¿½ï¿½ï¿½
+	double y_Start;//ï¿½ï¿½ï¿½yï¿½ï¿½ï¿½ï¿½
+	double x_End;//ï¿½Õµï¿½xï¿½ï¿½ï¿½ï¿½
+	double y_End;//ï¿½Õµï¿½yï¿½ï¿½ï¿½ï¿½
 	
 };
 
-struct ARC_Type//Ô²»¡
+struct ARC_Type//Ô²ï¿½ï¿½
 {
-	double cx;//Ô²ÐÄxÖá×ø±ê
-	double cy;//Ô²ÐÄyÖá×ø±ê
-	double r;//°ë¾¶
-	double arc_Start;//Ô²»¡ÆðÊ¼»¡¶È
-	double arc_End;//Ô²»¡ÖÕµã»¡¶È
+	double cx;//Ô²ï¿½ï¿½xï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	double cy;//Ô²ï¿½ï¿½yï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	double r;//ï¿½ë¾¶
+	double arc_Start;//Ô²ï¿½ï¿½ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½
+	double arc_End;//Ô²ï¿½ï¿½ï¿½Õµã»¡ï¿½ï¿½
 };
-struct Circl_Type//ÕûÔ²
+struct Circl_Type//ï¿½ï¿½Ô²
 {
-	double cx;//Ô²ÐÄxÖá×ø±ê
-	double cy;//Ô²ÐÄyÖá×ø±ê
-	double r;//Ô²°ë¾¶
+	double cx;//Ô²ï¿½ï¿½xï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	double cy;//Ô²ï¿½ï¿½yï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	double r;//Ô²ï¿½ë¾¶
 };
 
 typedef struct
@@ -47,19 +47,19 @@ typedef struct
 //extern int n;
 
 
-extern int factor;//·Å´óÒò×Ó£¬³õÊ¼»¯ÊÇºÁÃ×£¬ÈôÊÇÆäËû×ª»»
+extern int factor;//ï¿½Å´ï¿½ï¿½ï¿½ï¿½Ó£ï¿½ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½Çºï¿½ï¿½×£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×ªï¿½ï¿½
 extern struct ARC_Type ARC_P[100];
 extern struct LineType LineP[3601];
 extern struct Circl_Type Circl[10];
 extern struct DispersedPoint DispersedP[100000];
-extern int ARC_Num;//Ô²»¡¸öÊý
-extern int CirclNum;//Ô²¸öÊý
-extern int Line_Num;//Ö±Ïß¸öÊý
-extern int TotalNum;//Ô²»¡£¬Ô²£¬Ö±Ïß×ÜµÄ¸öÊý
-extern int SortNum[5000];//½«Ô²»¡£¬Ô²£¬Ö±ÏßµÄË³ÐòÅÅÁÐ
+extern int ARC_Num;//Ô²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+extern int CirclNum;//Ô²ï¿½ï¿½ï¿½ï¿½
+extern int Line_Num;//Ö±ï¿½ß¸ï¿½ï¿½ï¿½
+extern int TotalNum;//Ô²ï¿½ï¿½ï¿½ï¿½Ô²ï¿½ï¿½Ö±ï¿½ï¿½ï¿½ÜµÄ¸ï¿½ï¿½ï¿½
+extern int SortNum[5000];//ï¿½ï¿½Ô²ï¿½ï¿½ï¿½ï¿½Ô²ï¿½ï¿½Ö±ï¿½ßµï¿½Ë³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 extern double AngleCal(double x, double y);
-extern void ReadDxfData(char *FilePath);//¶ÁDxfÎÄ¼þº¯Êý
-extern void LineDispersed(DispersedPoint *DispP);//ÇúÏßÀëÉ¢
-extern void LineDisp(LineType Line,DispersedPoint *DispP,int *TotalPnum);//Ö±Ïß
-extern void ArcDisp(ARC_Type ArcP,DispersedPoint *DispP, int *TotalPnum);//Ô²»¡
+extern void ReadDxfData(char *FilePath);//ï¿½ï¿½Dxfï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½
+extern void LineDispersed(DispersedPoint *DispP);//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½É¢
+extern void LineDisp(LineType Line,DispersedPoint *DispP,int *TotalPnum);//Ö±ï¿½ï¿½
+extern void ArcDisp(ARC_Type ArcP,DispersedPoint *DispP, int *TotalPnum);//Ô²ï¿½ï¿½
 extern void CirCleDisp(Circl_Type CirP,DispersedPoint *DispP, int *TotalPnum);//Ô²
